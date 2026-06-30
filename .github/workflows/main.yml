@@ -1,4 +1,4 @@
-name: wand
+name: blossom
 
 on:
   workflow_dispatch:
