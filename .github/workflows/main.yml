@@ -1,10 +1,13 @@
-name: blossom
+name: wand
 
 on:
   workflow_dispatch:
-
   schedule:
     - cron: "0 */5 * * *"
+
+concurrency:
+  group: blossom-bot
+  cancel-in-progress: true
 
 jobs:
   discord-bot:
